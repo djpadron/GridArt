@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 
-.button {
+.form {
   display: flex;
   justify-content: center;
   margin-top: 30px;

@@ -8,6 +8,14 @@
       "type": "firefox",
       "request": "launch",
       "reAttach": true,
+      "name": "Firefox Launch localhost",
+      "url": "http://localhost:5500",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "firefox",
+      "request": "launch",
+      "reAttach": true,
       "name": "Firefox Launch index.html",
       "file": "${workspaceFolder}/index.html"
     }
