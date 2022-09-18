@@ -1,6 +1,7 @@
 const grid_container = document.querySelector(".grid-container");
-const MAX_GRID_ITEMS = 100;
+const MAX_GRID_ITEMS = 1000;
 var total_grid_items = 100;
+var grid_square_columns = 10;
 
 const numberInput = document.querySelector("#inputTextField");
 numberInput.addEventListener("input", (event) => {
@@ -25,6 +26,9 @@ resetButton.addEventListener("click", (event) => {
 });
 
 function drawGrid(total_grid_items) {
+  grid_square_columns = Math.floor(Math.sqrt(total_grid_items));
+  grid_container.style.setProperty("--col-size", grid_square_columns);
+  grid_container.style.setProperty("--row-size", grid_square_columns + 1);
   removeAllChildNodes(grid_container);
 
   for (let index = 0; index < total_grid_items; index++) {

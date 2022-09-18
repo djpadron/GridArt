@@ -24,8 +24,8 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(8, 2vw);
-  grid-template-rows: repeat(33, 2vw);
+  grid-template-columns: repeat(var(--col-size), 2vw);
+  grid-template-rows: repeat(var(--row-size), 2vw);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding: 20px;
